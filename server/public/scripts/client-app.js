@@ -55,10 +55,10 @@ function appendBooks(books) {
     $("#book-list").append('<div class="row book"></div>');
     $el = $('#book-list').children().last();
     $el.append('<h2> ' + books[i].title + '</h2>');
-    $el.append('<p> ' + books[i].author + '</p>');
-    $el.append('<p> ' + books[i].genre + '</p>');
-    $el.append('<p> ' + books[i].published + '</p>');
-    $el.append('<p> ' + books[i].edition + '</p>');
-    $el.append('<p> ' + books[i].publisher + '</p>');
+    $el.append('<p>Author: ' + books[i].author + '</p>');
+    $el.append('<p>Genre: ' + books[i].genre + '</p>');
+    $el.append('<p>Date Published: ' + books[i].published + '</p>');
+    $el.append('<p>Edition: ' + books[i].edition + '</p>');
+    $el.append('<p>Publisher ' + books[i].publisher + '</p>');
   }
 }
